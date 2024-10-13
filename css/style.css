@@ -244,7 +244,7 @@ ul, ol {
 }
 .section-title span {
 	font-size: 14px;
-	color: #dfa974;
+	color: #97591a;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -685,6 +685,70 @@ ul, ol {
 /*------------------------
   Home Page Room Section 
 -------------------------*/
+
+
+
+.custom-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Отступы между элементами */
+}
+
+/* Стили для больших экранов (мониторы) */
+.custom-gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; /* Скругление углов */
+    width: calc(25% - 10px); /* Четыре изображения в ряд на больших экранах */
+    transition: transform 0.3s;
+}
+
+.custom-gallery-item:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+}
+
+img {
+    width: 100%;
+    height: auto; /* Адаптивная высота */
+    border-radius: 15px; /* Скругление углов изображений */
+}
+
+.custom-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Затемнение */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Скрыто по умолчанию */
+    transition: opacity 0.3s; /* Плавный переход */
+    border-radius: 15px; /* Скругление углов оверлея */
+}
+
+.custom-gallery-item:hover .custom-overlay {
+    opacity: 1; /* Показать оверлей при наведении */
+}
+
+.custom-text {
+    color: white;
+    font-size: 20px; /* Размер текста */
+    text-align: center;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 600px) {
+    .custom-gallery-item {
+        width: 90%; /* Изображение занимает всю ширину экрана на мобильных устройствах */
+    }
+    
+    .custom-text {
+        font-size: 16px; /* Уменьшение размера текста для мобильных устройств */
+    }
+}
 
 .hp-room-items {
 	margin-left: -15px;
