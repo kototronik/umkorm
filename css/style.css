@@ -23,11 +23,11 @@
 /* Template default CSS
 /*----------------------------------------*/
 @font-face {
-	font-family: "vollda"; 
-	src: url("../fonts/vollda/Vollda-Bold.eot"); 
-	src: url("../fonts/vollda/Vollda-Bold.eot#iefix") format("embedded-opentype"),
-	url("../fonts/vollda/Vollda-Bold.woff") format("woff"), 
-	url("../fonts/vollda/Vollda.ttf") format("truetype"); 
+	font-family: "ff"; 
+	src: url("../fonts/ff/kari.eot"); 
+	src: url("../fonts/ff/kari.eot#iefix") format("embedded-opentype"),
+	url("../fonts/ff/kari.woff") format("woff"), 
+	url("../fonts/ff/kari.ttf") format("truetype"); 
 	font-style: normal; 
 	font-weight: normal; 
 	}
@@ -38,7 +38,7 @@
 
 html, body {
 	height: 100%;
-	font-family: "volda";
+	font-family: "ff";
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 }
@@ -79,7 +79,7 @@ html, body {
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'ff';
 	font-size: 110%;
 }
 
@@ -191,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	color: #111111;
 	font-weight: 400;
-	font-family: vollda;
+	font-family: ff;
 }
 h1 {
 	font-size: 70px;
@@ -213,7 +213,7 @@ h6 {
 }
 p {
 	font-size: 16px;
-	font-family: "vollda";
+	font-family: "ff";
 	color: #6b6b6b;
 	font-weight: 400;
 	line-height: 26px;
